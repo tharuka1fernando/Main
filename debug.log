@@ -1,0 +1,6 @@
+[0801/023914.135:ERROR:process_info.cc(359)] UncheckedAllocate
+[0802/022620.632:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0803/015816.150:ERROR:process_info.cc(359)] UncheckedAllocate
+[0803/015820.659:ERROR:process_info.cc(359)] UncheckedAllocate
+[0803/021128.055:ERROR:process_info.cc(359)] UncheckedAllocate
+[0803/021128.131:ERROR:process_info.cc(359)] UncheckedAllocate

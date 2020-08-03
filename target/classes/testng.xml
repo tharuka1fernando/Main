@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DBS Assesment - Selenium Challenge">
+
+	<listeners>
+		<listener
+			class-name="com.qa.dbs.ExtentReportListener.ExtentReportListenerNG" />
+	</listeners>
+
+	<test name="DBS Assesment Selenium Challenge">
+		<classes>
+			<class name="com.dbs.qa.testcases.FirstPageTest"></class>
+			<class name="com.dbs.qa.testcases.SustainabilityPageTest"></class>
+			<class name="com.dbs.qa.testcases.CreatingSocialImpactPageTest"></class>
+			<class name="com.dbs.qa.testcases.DBSSTrongTogetherPageTest"></class>
+			<class name="com.dbs.qa.testcases.SingaporePageTest"></class>
+			<class name="com.dbs.qa.testcases.AboutPageTest"></class>
+			<class name="com.dbs.qa.testcases.WhoWeArePageTest"></class>
+			<class name="com.dbs.qa.testcases.OurAwardsPageTest"></class>
+		</classes>
+	</test>
+</suite>

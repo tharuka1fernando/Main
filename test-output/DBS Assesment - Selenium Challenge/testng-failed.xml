@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DBS Assesment - Selenium Challenge]">
+  <listeners>
+    <listener class-name="com.qa.dbs.ExtentReportListener.ExtentReportListenerNG"/>
+  </listeners>
+  <test thread-count="5" name="DBS Assesment Selenium Challenge(failed)">
+    <classes>
+      <class name="com.dbs.qa.testcases.DBSSTrongTogetherPageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="selectSingaporeTest"/>
+          <include name="Setup"/>
+          <include name="getDBSSTPageTitleTest"/>
+        </methods>
+      </class> <!-- com.dbs.qa.testcases.DBSSTrongTogetherPageTest -->
+    </classes>
+  </test> <!-- DBS Assesment Selenium Challenge(failed) -->
+</suite> <!-- Failed suite [DBS Assesment - Selenium Challenge] -->
