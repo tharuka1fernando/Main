@@ -68,13 +68,13 @@ public class SingaporePageTest extends TestBase {
 			}
 			report[i] = colVal;
 		}
-		System.out.println(Arrays.deepToString(report));
+		System.out.println(Arrays.deepToString(report));		
 
 		ExcelWriter reader = new ExcelWriter(".\\src\\main\\java\\com\\dbs\\qa\\testdata\\DBSAssesmentTestData.xlsx",
-				"TableData", report);
+				"TableData", report,false);
 		reader.write();
-
-	}
+		}
+	
 
 	@AfterMethod
 	public void teardown() {

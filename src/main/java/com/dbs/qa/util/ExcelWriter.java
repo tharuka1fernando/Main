@@ -1,8 +1,11 @@
 package com.dbs.qa.util;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -13,15 +16,33 @@ public class ExcelWriter {
 	private String fileName;
 	private String sheetName;
 	private String[][] dataSet;
+	private boolean isAppendFile;
 
-	public ExcelWriter(String fileName, String sheetName, String[][] dataSet) {
+	public ExcelWriter(String fileName, String sheetName, String[][] dataSet, boolean isAppendFile) {
 		this.fileName = fileName;
 		this.sheetName = sheetName;
 		this.dataSet = dataSet;
+		this.isAppendFile = isAppendFile;
 	}
 
 	public void write() {
-		XSSFWorkbook workbook = new XSSFWorkbook();
+		XSSFWorkbook workbook = null;
+		File excelFile = new File(fileName);
+		if (excelFile.exists() && isAppendFile) {
+			System.out.println("Exists");
+			InputStream is;
+			try {
+				is = new FileInputStream(excelFile);
+				workbook = new XSSFWorkbook(is);
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		} else {
+			workbook = new XSSFWorkbook();
+		}
+
 		XSSFSheet sheet = workbook.createSheet(sheetName);
 
 		int rowNum = 0;

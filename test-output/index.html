@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-DBS_Assesment_-_Selenium_Challenge">
-              <span class="suite-name border-skipped">DBS Assesment - Selenium Challenge</span>
+              <span class="suite-name border-failed">DBS Assesment - Selenium Challenge</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">16 methods,  2 skipped,  14 passed</span>
+                    <span class="method-stats">16 methods, 1 failed,  4 skipped,  11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-DBS_Assesment_-_Selenium_Challenge" class="hide-methods failed suite-DBS_Assesment_-_Selenium_Challenge"> (hide)</a> <!-- hide-methods failed suite-DBS_Assesment_-_Selenium_Challenge -->
+                      <a href="#" panel-name="suite-DBS_Assesment_-_Selenium_Challenge" class="show-methods failed suite-DBS_Assesment_-_Selenium_Challenge"> (show)</a> <!-- show-methods failed suite-DBS_Assesment_-_Selenium_Challenge -->
+                    </span>
+                    <div class="method-list-content failed suite-DBS_Assesment_-_Selenium_Challenge">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DBS_Assesment_-_Selenium_Challenge" title="com.dbs.qa.testcases.OurAwardsPageTest" hash-for-method="takeAwardListTest">takeAwardListTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-DBS_Assesment_-_Selenium_Challenge -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -103,6 +117,16 @@
                       <span>
                         <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-DBS_Assesment_-_Selenium_Challenge" title="com.dbs.qa.testcases.DBSSTrongTogetherPageTest" hash-for-method="getDBSSTPageTitleTest">getDBSSTPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DBS_Assesment_-_Selenium_Challenge" title="com.dbs.qa.testcases.AboutPageTest" hash-for-method="goToWhoWeAre">goToWhoWeAre</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DBS_Assesment_-_Selenium_Challenge" title="com.dbs.qa.testcases.WhoWeArePageTest" hash-for-method="navigateToAwardPageTest">navigateToAwardPageTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -156,17 +180,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-DBS_Assesment_-_Selenium_Challenge" title="com.dbs.qa.testcases.AboutPageTest" hash-for-method="goToWhoWeAre">goToWhoWeAre</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-DBS_Assesment_-_Selenium_Challenge" title="com.dbs.qa.testcases.CreatingSocialImpactPageTest" hash-for-method="gotoDBSStrongTogetherTest">gotoDBSStrongTogetherTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-DBS_Assesment_-_Selenium_Challenge" title="com.dbs.qa.testcases.WhoWeArePageTest" hash-for-method="navigateToAwardPageTest">navigateToAwardPageTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -184,11 +198,6 @@
                         <a href="#" class="method navigator-link" panel-name="suite-DBS_Assesment_-_Selenium_Challenge" title="com.dbs.qa.testcases.SustainabilityPageTest" hash-for-method="sustainabilityPageTitleTest">sustainabilityPageTitleTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-DBS_Assesment_-_Selenium_Challenge" title="com.dbs.qa.testcases.OurAwardsPageTest" hash-for-method="takeAwardListTest">takeAwardListTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-DBS_Assesment_-_Selenium_Challenge -->
                   </li>
                 </ul>
@@ -201,6 +210,808 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-DBS_Assesment_-_Selenium_Challenge" class="panel DBS_Assesment_-_Selenium_Challenge">
+          <div class="suite-DBS_Assesment_-_Selenium_Challenge-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.dbs.qa.testcases.OurAwardsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="takeAwardListTest">
+                  </a> <!-- takeAwardListTest -->
+                  <span class="method-name">takeAwardListTest</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: The workbook already contains a sheet named &apos;AwardList&apos;
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:906)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:859)
+	at com.dbs.qa.util.ExcelWriter.write(ExcelWriter.java:46)
+	at com.dbs.qa.testcases.OurAwardsPageTest.takeAwardListTest(OurAwardsPageTest.java:76)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DBS_Assesment_-_Selenium_Challenge-class-failed -->
+          <div class="suite-DBS_Assesment_-_Selenium_Challenge-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.dbs.qa.testcases.AboutPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToWhoWeAre">
+                  </a> <!-- goToWhoWeAre -->
+                  <span class="method-name">goToWhoWeAre</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Singapore&apos;) and @href=&apos;#slideToN103A6&apos; and @class=&apos;hasDevice&apos;]&quot;}
+  (Session info: chrome=84.0.4147.89)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6OTCP28&apos;, ip: &apos;192.168.1.138&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\bttfe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56234}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 029594ec8bf0b41c1888f464b3da35c2
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Singapore&apos;) and @href=&apos;#slideToN103A6&apos; and @class=&apos;hasDevice&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.isSelected(Unknown Source)
+	at com.dbs.qa.pages.DBSSTrongTogetherPage.selectSingapore(DBSSTrongTogetherPage.java:23)
+	at com.dbs.qa.testcases.AboutPageTest.Setup(AboutPageTest.java:39)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DBS_Assesment_-_Selenium_Challenge-class-skipped -->
+          <div class="suite-DBS_Assesment_-_Selenium_Challenge-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.dbs.qa.testcases.WhoWeArePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToAwardPageTest">
+                  </a> <!-- navigateToAwardPageTest -->
+                  <span class="method-name">navigateToAwardPageTest</span>
+                  <div class="stack-trace">java.lang.StackOverflowError
+	at java.nio.charset.CharsetEncoder.encode(CharsetEncoder.java:579)
+	at sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:271)
+	at sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.io.OutputStreamWriter.write(OutputStreamWriter.java:207)
+	at java.io.BufferedWriter.flushBuffer(BufferedWriter.java:129)
+	at java.io.PrintStream.write(PrintStream.java:526)
+	at java.io.PrintStream.print(PrintStream.java:669)
+	at java.io.PrintStream.println(PrintStream.java:806)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:56)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy7.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
+	at com.dbs.qa.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:17)
+	at com.dbs.qa.util.WebEventListener.onException(WebEventListener.java:58)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$0(EventFiringWebDriver.java:84)
+	at com.sun.proxy.$Proxy6.onException(Unknown Source)
+... Removed 306 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DBS_Assesment_-_Selenium_Challenge-class-skipped -->
           <div class="suite-DBS_Assesment_-_Selenium_Challenge-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -212,13 +1023,13 @@
                   <a name="getDBSSTPageTitleTest">
                   </a> <!-- getDBSSTPageTitleTest -->
                   <span class="method-name">getDBSSTPageTitleTest</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;h4 class=&quot;h4-big&quot;&gt;...&lt;/h4&gt; is not clickable at point (311, 394). Other element would receive the click: &lt;div class=&quot; main-container&quot; id=&quot;bodywrapper&quot; style=&quot;margin-top: 120px;&quot;&gt;...&lt;/div&gt;
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;h4 class=&quot;h4-big&quot;&gt;...&lt;/h4&gt; is not clickable at point (311, 331). Other element would receive the click: &lt;div class=&quot;overlay-content&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=84.0.4147.89)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-6OTCP28&apos;, ip: &apos;192.168.1.138&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\bttfe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54229}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 45d751671533a15551cbaad41b99108f
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\bttfe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54944}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f389263cef09a6149a988fda0c570496
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -227,11 +1038,14 @@ Session ID: 45d751671533a15551cbaad41b99108f
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at com.dbs.qa.pages.FirstPage.GoToSustainability(FirstPage.java:49)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.dbs.qa.pages.FirstPage.GoToSustainability(FirstPage.java:45)
 	at com.dbs.qa.testcases.DBSSTrongTogetherPageTest.Setup(DBSSTrongTogetherPageTest.java:32)
-... Removed 36 stack frames
+... Removed 40 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -240,13 +1054,13 @@ Session ID: 45d751671533a15551cbaad41b99108f
                   <a name="selectSingaporeTest">
                   </a> <!-- selectSingaporeTest -->
                   <span class="method-name">selectSingaporeTest</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;h4 class=&quot;h4-big&quot;&gt;...&lt;/h4&gt; is not clickable at point (311, 394). Other element would receive the click: &lt;div class=&quot; main-container&quot; id=&quot;bodywrapper&quot; style=&quot;margin-top: 120px;&quot;&gt;...&lt;/div&gt;
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;h4 class=&quot;h4-big&quot;&gt;...&lt;/h4&gt; is not clickable at point (311, 331). Other element would receive the click: &lt;div class=&quot;overlay-content&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=84.0.4147.89)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-6OTCP28&apos;, ip: &apos;192.168.1.138&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\bttfe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54229}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 45d751671533a15551cbaad41b99108f
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\bttfe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54944}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f389263cef09a6149a988fda0c570496
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -255,60 +1069,19 @@ Session ID: 45d751671533a15551cbaad41b99108f
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at com.dbs.qa.pages.FirstPage.GoToSustainability(FirstPage.java:49)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.dbs.qa.pages.FirstPage.GoToSustainability(FirstPage.java:45)
 	at com.dbs.qa.testcases.DBSSTrongTogetherPageTest.Setup(DBSSTrongTogetherPageTest.java:32)
-... Removed 36 stack frames
+... Removed 40 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-DBS_Assesment_-_Selenium_Challenge-class-skipped -->
-          <div class="suite-DBS_Assesment_-_Selenium_Challenge-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.dbs.qa.testcases.AboutPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getAboutPageTitle">
-                  </a> <!-- getAboutPageTitle -->
-                  <span class="method-name">getAboutPageTitle</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="goToWhoWeAre">
-                  </a> <!-- goToWhoWeAre -->
-                  <span class="method-name">goToWhoWeAre</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-DBS_Assesment_-_Selenium_Challenge-class-passed -->
-          <div class="suite-DBS_Assesment_-_Selenium_Challenge-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.dbs.qa.testcases.OurAwardsPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getPageTitle">
-                  </a> <!-- getPageTitle -->
-                  <span class="method-name">getPageTitle</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="takeAwardListTest">
-                  </a> <!-- takeAwardListTest -->
-                  <span class="method-name">takeAwardListTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-DBS_Assesment_-_Selenium_Challenge-class-passed -->
           <div class="suite-DBS_Assesment_-_Selenium_Challenge-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -356,28 +1129,6 @@ Session ID: 45d751671533a15551cbaad41b99108f
           <div class="suite-DBS_Assesment_-_Selenium_Challenge-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.dbs.qa.testcases.SustainabilityPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickCreatingSocialImpactTest">
-                  </a> <!-- clickCreatingSocialImpactTest -->
-                  <span class="method-name">clickCreatingSocialImpactTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="sustainabilityPageTitleTest">
-                  </a> <!-- sustainabilityPageTitleTest -->
-                  <span class="method-name">sustainabilityPageTitleTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-DBS_Assesment_-_Selenium_Challenge-class-passed -->
-          <div class="suite-DBS_Assesment_-_Selenium_Challenge-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.dbs.qa.testcases.FirstPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -400,6 +1151,36 @@ Session ID: 45d751671533a15551cbaad41b99108f
           <div class="suite-DBS_Assesment_-_Selenium_Challenge-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.dbs.qa.testcases.OurAwardsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPageTitle">
+                  </a> <!-- getPageTitle -->
+                  <span class="method-name">getPageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DBS_Assesment_-_Selenium_Challenge-class-passed -->
+          <div class="suite-DBS_Assesment_-_Selenium_Challenge-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.dbs.qa.testcases.AboutPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAboutPageTitle">
+                  </a> <!-- getAboutPageTitle -->
+                  <span class="method-name">getAboutPageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DBS_Assesment_-_Selenium_Challenge-class-passed -->
+          <div class="suite-DBS_Assesment_-_Selenium_Challenge-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.dbs.qa.testcases.WhoWeArePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -410,11 +1191,26 @@ Session ID: 45d751671533a15551cbaad41b99108f
                   <span class="method-name">getWoWeArePageTitleTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DBS_Assesment_-_Selenium_Challenge-class-passed -->
+          <div class="suite-DBS_Assesment_-_Selenium_Challenge-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.dbs.qa.testcases.SustainabilityPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="navigateToAwardPageTest">
-                  </a> <!-- navigateToAwardPageTest -->
-                  <span class="method-name">navigateToAwardPageTest</span>
+                  <a name="clickCreatingSocialImpactTest">
+                  </a> <!-- clickCreatingSocialImpactTest -->
+                  <span class="method-name">clickCreatingSocialImpactTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sustainabilityPageTitleTest">
+                  </a> <!-- sustainabilityPageTitleTest -->
+                  <span class="method-name">sustainabilityPageTitleTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -483,74 +1279,74 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(16);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'takeAwardListTest')
-data.setCell(0, 2, 'com.dbs.qa.testcases.OurAwardsPageTest')
-data.setCell(0, 3, 101586);
+data.setCell(0, 1, 'clickSustainabilityTest')
+data.setCell(0, 2, 'com.dbs.qa.testcases.FirstPageTest')
+data.setCell(0, 3, 6540);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'clickSustainabilityTest')
-data.setCell(1, 2, 'com.dbs.qa.testcases.FirstPageTest')
-data.setCell(1, 3, 4943);
+data.setCell(1, 1, 'gotoDBSStrongTogetherTest')
+data.setCell(1, 2, 'com.dbs.qa.testcases.CreatingSocialImpactPageTest')
+data.setCell(1, 3, 3795);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'readAndWriteTableTest')
 data.setCell(2, 2, 'com.dbs.qa.testcases.SingaporePageTest')
-data.setCell(2, 3, 4479);
+data.setCell(2, 3, 3770);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'navigateToAwardPageTest')
-data.setCell(3, 2, 'com.dbs.qa.testcases.WhoWeArePageTest')
-data.setCell(3, 3, 2593);
+data.setCell(3, 1, 'takeAwardListTest')
+data.setCell(3, 2, 'com.dbs.qa.testcases.OurAwardsPageTest')
+data.setCell(3, 3, 3140);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'gotoDBSStrongTogetherTest')
-data.setCell(4, 2, 'com.dbs.qa.testcases.CreatingSocialImpactPageTest')
-data.setCell(4, 3, 2182);
+data.setCell(4, 1, 'clickCreatingSocialImpactTest')
+data.setCell(4, 2, 'com.dbs.qa.testcases.SustainabilityPageTest')
+data.setCell(4, 3, 1624);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'clickCreatingSocialImpactTest')
-data.setCell(5, 2, 'com.dbs.qa.testcases.SustainabilityPageTest')
-data.setCell(5, 3, 853);
+data.setCell(5, 1, 'defaultPageTitleTest')
+data.setCell(5, 2, 'com.dbs.qa.testcases.FirstPageTest')
+data.setCell(5, 3, 1089);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'getPageTitle')
 data.setCell(6, 2, 'com.dbs.qa.testcases.OurAwardsPageTest')
-data.setCell(6, 3, 587);
+data.setCell(6, 3, 851);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'goToWhoWeAre')
-data.setCell(7, 2, 'com.dbs.qa.testcases.AboutPageTest')
-data.setCell(7, 3, 500);
+data.setCell(7, 1, 'sustainabilityPageTitleTest')
+data.setCell(7, 2, 'com.dbs.qa.testcases.SustainabilityPageTest')
+data.setCell(7, 3, 243);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'sustainabilityPageTitleTest')
-data.setCell(8, 2, 'com.dbs.qa.testcases.SustainabilityPageTest')
-data.setCell(8, 3, 389);
+data.setCell(8, 1, 'getSingaporePageTitle')
+data.setCell(8, 2, 'com.dbs.qa.testcases.SingaporePageTest')
+data.setCell(8, 3, 104);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'defaultPageTitleTest')
-data.setCell(9, 2, 'com.dbs.qa.testcases.FirstPageTest')
-data.setCell(9, 3, 287);
+data.setCell(9, 1, 'socialImapctPageTitleTest')
+data.setCell(9, 2, 'com.dbs.qa.testcases.CreatingSocialImpactPageTest')
+data.setCell(9, 3, 87);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'getWoWeArePageTitleTest')
-data.setCell(10, 2, 'com.dbs.qa.testcases.WhoWeArePageTest')
-data.setCell(10, 3, 48);
+data.setCell(10, 1, 'getAboutPageTitle')
+data.setCell(10, 2, 'com.dbs.qa.testcases.AboutPageTest')
+data.setCell(10, 3, 79);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'getAboutPageTitle')
-data.setCell(11, 2, 'com.dbs.qa.testcases.AboutPageTest')
-data.setCell(11, 3, 46);
+data.setCell(11, 1, 'getWoWeArePageTitleTest')
+data.setCell(11, 2, 'com.dbs.qa.testcases.WhoWeArePageTest')
+data.setCell(11, 3, 12);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'getSingaporePageTitle')
-data.setCell(12, 2, 'com.dbs.qa.testcases.SingaporePageTest')
-data.setCell(12, 3, 21);
+data.setCell(12, 1, 'goToWhoWeAre')
+data.setCell(12, 2, 'com.dbs.qa.testcases.AboutPageTest')
+data.setCell(12, 3, 0);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'socialImapctPageTitleTest')
-data.setCell(13, 2, 'com.dbs.qa.testcases.CreatingSocialImpactPageTest')
-data.setCell(13, 3, 15);
+data.setCell(13, 1, 'selectSingaporeTest')
+data.setCell(13, 2, 'com.dbs.qa.testcases.DBSSTrongTogetherPageTest')
+data.setCell(13, 3, 0);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'selectSingaporeTest')
+data.setCell(14, 1, 'getDBSSTPageTitleTest')
 data.setCell(14, 2, 'com.dbs.qa.testcases.DBSSTrongTogetherPageTest')
 data.setCell(14, 3, 0);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'getDBSSTPageTitleTest')
-data.setCell(15, 2, 'com.dbs.qa.testcases.DBSSTrongTogetherPageTest')
+data.setCell(15, 1, 'navigateToAwardPageTest')
+data.setCell(15, 2, 'com.dbs.qa.testcases.WhoWeArePageTest')
 data.setCell(15, 3, 0);
 window.suiteTableData['DBS_Assesment_-_Selenium_Challenge']= { tableData: data, tableDiv: 'times-div-DBS_Assesment_-_Selenium_Challenge'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-DBS_Assesment_-_Selenium_Challenge">
               </div> <!-- times-div-DBS_Assesment_-_Selenium_Challenge -->
             </div> <!-- times-div -->
@@ -583,41 +1379,41 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">defaultPageTitleTest</span>
-                <span class="method-start">8291 ms</span>
+                <span class="method-start">9419 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8584 ms</span>
+                <span class="method-start">10513 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dbs.qa.testcases.SustainabilityPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">9327 ms</span>
+                <span class="method-start">11282 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">sustainabilityPageTitleTest</span>
-                <span class="method-start">19954 ms</span>
+                <span class="method-start">24352 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20345 ms</span>
+                <span class="method-start">24598 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dbs.qa.testcases.CreatingSocialImpactPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">21134 ms</span>
+                <span class="method-start">26058 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">socialImapctPageTitleTest</span>
-                <span class="method-start">32233 ms</span>
+                <span class="method-start">39218 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">32251 ms</span>
+                <span class="method-start">39307 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -626,183 +1422,187 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Setup</span>
-                <span class="method-start">33034 ms</span>
+                <span class="method-start">40445 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dbs.qa.testcases.SingaporePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">42619 ms</span>
+                <span class="method-start">52331 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getSingaporePageTitle</span>
-                <span class="method-start">59536 ms</span>
+                <span class="method-start">127888 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">59561 ms</span>
+                <span class="method-start">127994 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dbs.qa.testcases.AboutPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">60340 ms</span>
+                <span class="method-start">128937 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getAboutPageTitle</span>
-                <span class="method-start">76040 ms</span>
+                <span class="method-start">150264 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">76088 ms</span>
+                <span class="method-start">150346 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dbs.qa.testcases.WhoWeArePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">77225 ms</span>
+                <span class="method-start">151250 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getWoWeArePageTitleTest</span>
-                <span class="method-start">96070 ms</span>
+                <span class="method-start">187363 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">96119 ms</span>
+                <span class="method-start">187377 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dbs.qa.testcases.OurAwardsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">96973 ms</span>
+                <span class="method-start">188173 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getPageTitle</span>
-                <span class="method-start">119258 ms</span>
+                <span class="method-start">215051 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">119847 ms</span>
+                <span class="method-start">215903 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dbs.qa.testcases.FirstPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp</span>
-                <span class="method-start">120682 ms</span>
+                <span class="method-start">216784 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickSustainabilityTest</span>
-                <span class="method-start">128027 ms</span>
+                <span class="method-start">224100 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">132971 ms</span>
+                <span class="method-start">230643 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dbs.qa.testcases.SustainabilityPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">134112 ms</span>
+                <span class="method-start">231428 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickCreatingSocialImpactTest</span>
-                <span class="method-start">146355 ms</span>
+                <span class="method-start">246475 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">147208 ms</span>
+                <span class="method-start">248101 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dbs.qa.testcases.CreatingSocialImpactPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">148038 ms</span>
+                <span class="method-start">249222 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">gotoDBSStrongTogetherTest</span>
-                <span class="method-start">161177 ms</span>
+                <span class="method-start">265125 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">163361 ms</span>
+                <span class="method-start">268921 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dbs.qa.testcases.SingaporePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">164190 ms</span>
+                <span class="method-start">269764 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">readAndWriteTableTest</span>
-                <span class="method-start">181153 ms</span>
+                <span class="method-start">291819 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">185632 ms</span>
+                <span class="method-start">295590 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dbs.qa.testcases.AboutPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Setup</span>
-                <span class="method-start">186483 ms</span>
+                <span class="method-start">296397 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">goToWhoWeAre</span>
-                <span class="method-start">206109 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">206610 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dbs.qa.testcases.WhoWeArePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Setup</span>
-                <span class="method-start">207528 ms</span>
+                <span class="method-start">418430 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">navigateToAwardPageTest</span>
-                <span class="method-start">227310 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">229904 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dbs.qa.testcases.OurAwardsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">230742 ms</span>
+                <span class="method-start">3193286 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">takeAwardListTest</span>
-                <span class="method-start">250637 ms</span>
+                <span class="method-start">3216447 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">352223 ms</span>
+                <span class="method-start">3219589 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dbs.qa.testcases.DBSSTrongTogetherPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getDBSSTPageTitleTest</span>
-                <span class="method-start">-1596396771116 ms</span>
+                <span class="method-start">-1596523955747 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectSingaporeTest</span>
-                <span class="method-start">-1596396771116 ms</span>
+                <span class="method-start">-1596523955747 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.dbs.qa.testcases.AboutPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">goToWhoWeAre</span>
+                <span class="method-start">-1596523955747 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.dbs.qa.testcases.WhoWeArePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">navigateToAwardPageTest</span>
+                <span class="method-start">-1596523955747 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

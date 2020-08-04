@@ -71,8 +71,8 @@ public class OurAwardsPageTest extends TestBase {
 
 		System.out.println(Arrays.deepToString(report));
 
-		ExcelWriter reader = new ExcelWriter(".\\src\\main\\java\\com\\dbs\\qa\\testdata\\DBSAssesmentTestData2.xlsx",
-				"AwardList", report);
+		ExcelWriter reader = new ExcelWriter(".\\src\\main\\java\\com\\dbs\\qa\\testdata\\DBSAssesmentTestData.xlsx",
+				"AwardList", report,true);
 		reader.write();
 
 		int size1 = driver.findElements(By.xpath("//div[@class='row mBot-20']")).size();

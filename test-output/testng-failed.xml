@@ -6,6 +6,27 @@
   </listeners>
   <test thread-count="5" name="DBS Assesment Selenium Challenge(failed)">
     <classes>
+      <class name="com.dbs.qa.testcases.OurAwardsPageTest">
+        <methods>
+          <include name="takeAwardListTest"/>
+          <include name="teardown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.dbs.qa.testcases.OurAwardsPageTest -->
+      <class name="com.dbs.qa.testcases.AboutPageTest">
+        <methods>
+          <include name="Setup"/>
+          <include name="teardown"/>
+          <include name="goToWhoWeAre"/>
+        </methods>
+      </class> <!-- com.dbs.qa.testcases.AboutPageTest -->
+      <class name="com.dbs.qa.testcases.WhoWeArePageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="Setup"/>
+          <include name="navigateToAwardPageTest"/>
+        </methods>
+      </class> <!-- com.dbs.qa.testcases.WhoWeArePageTest -->
       <class name="com.dbs.qa.testcases.DBSSTrongTogetherPageTest">
         <methods>
           <include name="teardown"/>
